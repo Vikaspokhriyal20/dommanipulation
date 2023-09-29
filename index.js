@@ -9,5 +9,15 @@ function setAttributes(params) {
     inputbox.setAttribute('disabled', '');
 }
 
+let title = document.getElementById('title');
+title.classList.replace('hello' , 'demo');
+console.log(title);
+
+
+
+
+
+
+
 
 

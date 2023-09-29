@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: violet;
+    background-color: white;
     text-align: center;
    
 }
@@ -24,4 +24,12 @@ a
     color: black;
 }
 
-
+#sec
+{
+    max-width: 450px;
+    background-color: white;
+    margin: auto;
+    padding: 1rem;
+    background: linear-gradient(360deg , white , pink);
+    margin-bottom: 1rem;
+}
