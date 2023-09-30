@@ -43,6 +43,7 @@ a
     margin: auto;
     background-color: white;
     padding: 2rem;
+    margin-bottom: 2rem;
 }
 
 #profile > img
@@ -69,4 +70,34 @@ a
     outline: none;
     border-radius: 5px;
     padding: 0.8rem;
+}
+
+/* 2nd project */
+
+#user-img
+{
+    max-width: 400px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+#user-img >img
+{
+    width: 100%;
+    object-fit: cover;
+    max-height: 300px;
+    margin-bottom: 2rem;
+}
+
+#user-img > i
+{
+    font-size: 70px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50px,-50px) scale(0);
+    opacity: 0;
+    transition: transform  ease 0.5s ;
 }

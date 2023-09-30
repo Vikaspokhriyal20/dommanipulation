@@ -1,3 +1,4 @@
+// first project
 let btn = document.getElementById('follow-btn');
 let title = document.getElementById('status');
 
@@ -15,4 +16,21 @@ btn.addEventListener('click', () => {
         btn.innerHTML = 'Follow';
         count = 0;
     }
+})
+
+// secound project
+
+let userImg = document.getElementById('user-img');
+let like = document.getElementById('like');
+
+userImg.addEventListener('dblclick', () => {
+    like.style.transform = 'translate(-50px,-50px) scale(1)';
+    like.style.opacity = 0.8;
+
+    setTimeout(() => {
+        like.style.opacity = 0;
+    }, 1000);
+    setTimeout(() => {
+        like.style.transform = 'translate(-50px,-50px) scale(0)';
+    }, 3000);
 })
