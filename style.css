@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: white;
+    background-color: pink;
     text-align: center;
    
 }
@@ -27,9 +27,46 @@ a
 #sec
 {
     max-width: 450px;
-    background-color: white;
+    max-height: 250px;
     margin: auto;
     padding: 1rem;
-    background: linear-gradient(360deg , white , pink);
-    margin-bottom: 1rem;
+    background-color: purple;
+    margin-bottom: 4rem;
+    color: white;
+    text-transform: capitalize;
+}
+
+#profile
+{
+    max-width: 400px;
+    color: black;
+    margin: auto;
+    background-color: white;
+    padding: 2rem;
+}
+
+#profile > img
+{
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 5px;
+
+}
+
+#status
+{
+    color: red;
+    font-weight: 600;
+}
+
+
+#follow-btn
+{
+    background-color: blue;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 0.8rem;
 }

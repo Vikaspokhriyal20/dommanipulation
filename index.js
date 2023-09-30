@@ -1,23 +1,18 @@
-// Dom Targeting Method
-let menu = document.getElementById('menu');
-let list = document.createElement('li');
-list.innerText = 'Contact';
-menu.appendChild(list);
+let btn = document.getElementById('follow-btn');
+let title = document.getElementById('status');
 
-let inputbox = document.getElementById('inputbox');
-function setAttributes(params) {
-    inputbox.setAttribute('disabled', '');
-}
+let count = 0;
 
-let title = document.getElementById('title');
-title.classList.replace('hello' , 'demo');
-console.log(title);
-
-
-
-
-
-
-
-
-
+btn.addEventListener('click', () => {
+    if (count === 0) {
+        title.innerText = 'Friend';
+        title.style.color = 'green';
+        btn.innerHTML = 'Unfollow';
+        count = 1;
+    } else {
+        title.innerText = 'Stranger';
+        title.style.color = 'red';
+        btn.innerHTML = 'Follow';
+        count = 0;
+    }
+})
